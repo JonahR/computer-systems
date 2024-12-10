@@ -15,4 +15,4 @@ void setVal(str1 *p, str2 *q) {
 	int v2 = q->u;
 	p->y = v1+v2;
 }
-// A = 6 B = 2
+// A = 5 B = 9
