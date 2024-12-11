@@ -18,5 +18,5 @@ union ele {
 
 void proc (union ele *up)
 {
-	up->next->p = *((up->next).p) - up->x;
+	up->next->y = *(up->next->p) - up->x;
 }
