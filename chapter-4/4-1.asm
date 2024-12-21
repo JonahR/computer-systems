@@ -1,0 +1,15 @@
+.pos 0x100
+	irmovl $15, %ebx
+	rrmovl %ebx, %ecx
+loop:
+	rmmovl %ecx, -3(%ebx)
+	addl %ebx, %ecx
+	jmp loop
+
+0x100 0x30F30F000000
+0x106 0x2031
+0x108 0x4013FDFFFFFF
+0x10E 0x6031
+0x110 0x700801000000
+
+
