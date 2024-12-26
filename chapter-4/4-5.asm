@@ -10,12 +10,11 @@ Sum:
 Loop:
 	mrmovl (%ecx), %esi
 	rrmovl (%esi), %edi
-	andl %esi, %esi
-	jmpge Pos
 	irmovl $-1, %ebx	
-	xorl %ebx, %esi
-	addl $1, %esi
-Pos:
+	xorl %ebx, %edi
+	addl $1, %edi
+	andl %esi, %esi
+	cmovl %edi, %esi
 	addl %esi, %eax
 	irmovl $4, %ebx
 	addl %ebx, %ecx
