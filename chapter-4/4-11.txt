@@ -1,0 +1,10 @@
+icode:ifun <- M1[0x00e] = 3:0
+rA:rB <- M1[0x00f] = F:4
+valC <- M4[0x010] = 128
+valP <- 0x014
+
+valE <- 0 + 128 = 128 
+
+R[%esp] <- valE = 128
+
+PC <- valP = 0x014
