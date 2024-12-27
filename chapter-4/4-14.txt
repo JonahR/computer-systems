@@ -1,0 +1,1 @@
+Yes, the behavior conforms to IA32. The stack is incremented and the old stack pointer value is popped.
