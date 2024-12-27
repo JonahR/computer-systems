@@ -1,0 +1,13 @@
+cmovXX rA, rB
+icode:ifun <- M1[PC]
+rA:rB <- M1[PC + 1]
+valP <- PC + 2
+
+valA <- R[rA]
+valB <- R[rB]
+
+Cnd <- Cond(CC, ifun)
+
+R[rB] <- Cnd ? valA : valB
+
+PC <- valP
