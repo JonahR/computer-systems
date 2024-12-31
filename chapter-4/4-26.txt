@@ -1,0 +1,4 @@
+A) Between C and D. 5.26 GIPS. 380ps.
+B) Between B and C and D and E. 7.69 GIPS. 390ps.
+C) Between A and B, C and D, and D and E. 9.09 GIPS. 440ps.
+D) 4 registers inserted. 10.00 GIPS. 500ps.
