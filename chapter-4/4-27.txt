@@ -1,0 +1,2 @@
+throughput = 1000 * (1 / ((300 / k) + 20))
+limit = 50 GIBS
