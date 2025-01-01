@@ -5,4 +5,3 @@ int f_stat = [
 	1 : SAOK;
 ];
 
-dff
