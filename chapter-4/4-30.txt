@@ -1,0 +1,7 @@
+irmovl $5, %edx
+irmovl $0x100, %esp
+rmmovl %edx, 0(%esp)
+popl %esp
+rrmovl %esp, %eax
+
+The incremented stack pointer would be used in the rrmovl instruction instead ofthe value at the previous stack pointer.
