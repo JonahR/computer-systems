@@ -1,0 +1,8 @@
+A. The conditional jump executes 10.5 instructions on average. 
+The conditional move executes 10 instructions on average.
+
+B. The conditional jump injects 1 bubble per loop on average.
+The conditional move injects 0 bubbles per loop on average.
+
+C. The conditional jump takes 11.5 cycles per loop. The 
+conditional move takes 10 cycles per loop
