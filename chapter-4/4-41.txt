@@ -1,0 +1,2 @@
+The different branch prediction strategy would lower the CPI 
+from 1.27 to 1.25.
