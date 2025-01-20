@@ -1,0 +1,9 @@
+A. No. The correct value to pushl %esp is the unincremented stack pointer value.
+This implementation would be incorrect because it moves the decremented stack
+pointer into %esp.
+
+B. 
+rrmovl %esp, %eax
+subl $4, %esp
+movl %eax, (%esp)
+

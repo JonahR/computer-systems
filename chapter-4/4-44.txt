@@ -1,0 +1,3 @@
+A. Yes, this code correctly describes the popl %esp instruction.
+
+B. There is no need to rewrite this.
