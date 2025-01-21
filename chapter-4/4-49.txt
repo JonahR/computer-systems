@@ -1,0 +1,35 @@
+
+bool need_regids =
+	icode in { IIADDL, IRRMOVL, IOPL, IPUSHL, IPOPL, 
+		     IIRMOVL, IRMMOVL, IMRMOVL };
+
+
+bool need_valC =
+	icode in { IIADDL, IIRMOVL, IRMMOVL, IMRMOVL, IJXX, ICALL };
+
+
+int srcB = [
+	icode in { IIADDL, IOPL, IRMMOVL, IMRMOVL  } : rB;
+	icode in { IPUSHL, IPOPL, ICALL, IRET } : RESP;
+	1 : RNONE;  # Don't need register
+];
+int dstE = [
+	icode in { IRRMOVL } && Cnd : rB;
+	icode in { IIADDL, IIRMOVL, IOPL} : rB;
+	icode in { IPUSHL, IPOPL, ICALL, IRET } : RESP;
+	1 : RNONE;  # Don't write any register
+];
+int aluA = [
+	icode in { IRRMOVL, IOPL } : valA;
+	icode in { IIADDL, IIRMOVL, IRMMOVL, IMRMOVL } : valC;
+	icode in { ICALL, IPUSHL } : -4;
+	icode in { IRET, IPOPL } : 4;
+	# Other instructions don't need ALU
+];
+int aluB = [
+	icode in { IIADDL, IRMMOVL, IMRMOVL, IOPL, ICALL, 
+		      IPUSHL, IRET, IPOPL } : valB;
+	icode in { IRRMOVL, IIRMOVL } : 0;
+	# Other instructions don't need ALU
+];
+bool set_cc = icode in { IIADDL, IOPL };
