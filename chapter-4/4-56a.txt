@@ -1,0 +1,2 @@
+E_icode in { IMRMOVL, IPOPL } && !( D_icode in { IPUSHL, IRMMOVL } && E_dstM == d_srcA) &&
+E_dstM in { d_srcA, d_srcB }
