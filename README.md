@@ -1,1 +1,1 @@
-Solutions to the Homework questions from "Computer Systems: A Programmer's Perspective" as I work though the textbook.
+Solutions to the Homework questions from "Computer Systems: A Programmer's Perspective" as I work through the textbook.
