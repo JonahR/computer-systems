@@ -42,10 +42,13 @@ s_inner
 	rrmovl %ecx, %edi
 	addl $4, %edi // array[i + 1]
 	rrmovl %ecx, %eax
-	subl %edi, %eax //array[i] - array[i+1] 
+	mrmovl (%edi), %eax // Get array[i+1]
+    mrmovl (%ecx), %edx // Get array[i]
+    rrmovl %eax, %edi
+	subl %edx, %edi //array[i] - array[i+1]
 	jge if_done // GOTO if array[i+1] >= array[i]	
-	mrmovl (%edi), %eax // GET array[i+1]
-	mrmovl (%ecx), %edx // GET array[i]
+	mrmovl (%edx), %eax // GET array[i+1]
+	mrmovl (%edi), %edx // GET array[i]
 	rmmovl %edx, (%edi) // array[i+1] = array[i]
 	rmmovl %eax, (%ecx) // array[i] = t
 if_done

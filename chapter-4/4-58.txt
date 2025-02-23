@@ -1,0 +1,3 @@
+The inner loop of bubble sort using cmoves has 17 instructions. The inner loop of bubble sort has
+13 or 17 instructs depending on if the JMP is taken. If the jump is taken, 2 extra NOPs are inserted. For a total or 13
+19. 13 + 19 / 2 = 16 instructions on average. Therefore, the CMOV is actually slower on average than the JMP.
