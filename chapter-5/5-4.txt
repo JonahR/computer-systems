@@ -1,0 +1,7 @@
+A. In -02, %xmm0 already contains the value of product. In -01, we retrieve the value of product from memory each
+loop. We right to memory in both.
+
+B. Yes. Because line 5 will move the result back to the dest memory location.
+
+C. It preserves. We save the value of product in a register and write it to memory, we save time by reading from the
+register instead of memory.
