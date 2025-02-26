@@ -1,0 +1,5 @@
+A. 1n additions and 2n multiplications.
+
+B. The CPE arises because Double multiplication takes 5.0 CPE, and lines 7, 8 are not in the same critical path, so
+they are executed in parallel for a total CPE of 5.0.
+
