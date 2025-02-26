@@ -1,0 +1,5 @@
+A. 1n additions and 1n multiplications
+
+B. The critical path has one double multiplication and one double additions. This is a total of 5.0 + 3.0 CPE.
+
+C. The function in 5.5 has a shorter critical path. The two multiplications run in parallel.
