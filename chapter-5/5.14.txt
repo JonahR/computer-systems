@@ -1,0 +1,1 @@
+A. It will require a 2.67 speedup
