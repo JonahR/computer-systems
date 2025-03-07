@@ -1,0 +1,9 @@
+A. The resulting values stored in a would be 1, 2, 3, ... , 998, 999, 999
+
+B. The resulting values stored in a would be 0, 0, 0, ..., 0, 0, 0
+
+C. Part B has a higher CPE because the current interation src[i] is dependent on the previous iteration's
+dest[i] being written to memory.
+
+D. I would expect the performance to match part A because each iteration does not rely on the previous
+iteration writting to memory.
