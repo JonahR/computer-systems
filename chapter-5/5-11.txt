@@ -1,0 +1,13 @@
+# psum1. a in %rdi, p in %rsi, i in %rax, cnt in %rdx
+
+.L5
+	movs	-4(%rsi, %rax, 4), %xmm0
+	addss	(%rdi, %rax, 4), %xmm0
+	movss	%xmm0, (%rsi, %rax, 4)
+	addq	$1, %rax
+	cmpq	%rax, %rdx
+	jg	.L5
+
+A. The CPE is high because the first three instructions have write/read dependencies
+on eachother. Intruction 2 cannot complete the add until instruction 1 has read
+from memory. Instruction 2 cannot write until the addition has completed.
