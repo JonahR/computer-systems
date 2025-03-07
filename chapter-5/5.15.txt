@@ -1,0 +1,19 @@
+A.
+| %rbx | %rdx | %rax | %xmm1 |
+   |     |  |      |       |
+   |     |  |--    |       |
+   v     v    v    v       |
+   | load |   | load |     |
+         |     |           |
+         V     V           |
+        | mul |            |
+            |              |
+            |              V
+            -------> | add |
+
+B. 3 CPE from the Float addition in each iteration.
+
+C. 1 CPE for interger addition
+
+D. The multiplications can be done each clock cycle, the multiplications do not rely on the previoius interation's
+values.
