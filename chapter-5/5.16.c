@@ -17,8 +17,12 @@ void inner4(vec_ptr u, vec_prt v, data_t *dest)
 	*dest = sum;
 }
 
-// A. Inner product CPE cannot be lower than 2.0 because a load plus integer addition takes a minimum of
-// 2 CPE.
+/*
 
-// B. 4 way loop unrolling did not decrease the CPE of floating-point data because we reach the throughput limits without loop
-// unrolling. It takes the multiplier 4 cycles to start all 4 multiplications needed for loop unrolling. 
+A. No version of the inner product procedure can have a CPE lower than 2.0 because each element requires 2 load operations and the load unit can only issue one load
+every clock cycle.
+
+B. 4 way loop unrolling did not decrease the CPE of floating-point data because we reach the throughput limits without loop
+unrolling. 
+
+*/
