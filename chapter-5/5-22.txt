@@ -1,0 +1,1 @@
+Speeding up part B wil increase performance by 1.25. Speeding up part part C will increase performance by 1.2.
