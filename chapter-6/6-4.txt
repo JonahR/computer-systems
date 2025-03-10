@@ -1,0 +1,4 @@
+A. 5ms + 3ms = 8ms
+
+B. 8ms * 2000 = ~16 seconds
+
