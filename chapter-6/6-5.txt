@@ -1,0 +1,12 @@
+A. 22,125,312 - 22,076,928 = 48,384 spare segments
+
+48,384 / 864 = 56 spare tracks
+
+56 / 8 = 7 spare cylinders
+
+B. 20,838,400 - 20,804,608 = 33,792 spare segments
+
+33,792 / 704 = 48 spare tracks
+
+48 / 8 = 6 spare cylinders
+
