@@ -1,0 +1,20 @@
+point is layed out in memory as:
+
+p[[vel, vel, vel][acc, acc, acc]]
+
+Rank order: B, C, D
+
+B has good temporal locality because for each inner loop it reference the same value of p[i].
+B has good spacial locality because it iterates over each value of vel and then each value
+of acc. From above, we see that these are in order.
+
+
+C has good temporal locality because for each inner loop it reference the same value of p[i].
+C does not have good spacial locality because each iteration switches between storing in vel
+and acc. As we see from above, these are not continuous, but stride-3.
+
+D does not have good locality because for each inner loop, we are referencing different values
+of p[i].
+D does not have good spacial equality because we are referencing different values of p[i] which
+have stride-6 locality.
+
