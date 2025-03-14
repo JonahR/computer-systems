@@ -1,0 +1,13 @@
+A. The first 2^(tag bits) blocks will be associated with the first set.
+
+B. In the set <512, 1, 32, 32> with set bits being the higher order bits, the first 2^18 addresses map to set 0.
+
+set bits = 2^9
+block bits = 2 ^ 5
+tag bits = 2 ^ 18
+
+int array[4096] contains 2 ^ 14 bytes.
+
+Only one array block will be store in the cache at any given time. This is because the first 2^18 addresses are 
+mapped to set 0, and the array only contains 2 ^ 14 address. All of the addresses will map to set 0, even though
+there are 512 sets. This is a lot of conflict misses.
