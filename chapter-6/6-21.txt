@@ -1,0 +1,5 @@
+A. Total number of reads: 512
+B. Total number if misses: 128
+C. Miss rate: 25%
+D. Miss rate if cache was 2x the size: 25%, the misses are from cold misses. 
+
