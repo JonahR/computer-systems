@@ -1,0 +1,4 @@
+A. Total number of reads: 512
+B. Total number of misses: 256
+C. Miss rate: 50%
+
