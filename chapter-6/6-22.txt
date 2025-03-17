@@ -1,0 +1,2 @@
+A. The computer loads a 8 byte double word from the L1 cache in ~4 CPU cycles.
+
