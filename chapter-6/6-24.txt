@@ -1,0 +1,6 @@
+Average seek = 4ms
+Average rotation = 2ms
+Segment read = 0.005ms
+
+Time to read a random segment = 6.005ms
+
