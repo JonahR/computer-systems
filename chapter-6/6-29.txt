@@ -1,0 +1,5 @@
+A. Hex addresses in the format x xxxx xxx0 10xx will map to set 2.
+B. Hex addresses in the format x xxxx xxx1 00xx will map to set 4.
+C. Hex addresses in the format x xxxx xxx1 01xx will map to set 5.
+D. Hex addresses in the format x xxxx xxx1 11xx will map to set 7.
+

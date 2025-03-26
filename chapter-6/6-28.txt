@@ -1,0 +1,4 @@
+A. Hex addresses in the format x xxxx xxx0 01xx will be mapped to Set 1.
+
+B. Hex addresses in the format x xxxx xxx1 10xx will be mapped to Set 2.
+
