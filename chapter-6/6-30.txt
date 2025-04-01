@@ -3,5 +3,5 @@ A. CT CT CT CT CT CT CT CT CI CI CO CO
 B. 
 Read   0x836   Miss   -
 Write  0x836   Hit    -
-Read   0xFFD   Miss   -
+Read   0xFFD   Hit    0x03
 
