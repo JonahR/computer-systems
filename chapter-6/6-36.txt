@@ -1,0 +1,12 @@
+dst array
+m m m m
+h h h h
+h h h h
+h h h h
+
+src array
+m h h h
+m h h h
+m h h h
+m h h h
+
