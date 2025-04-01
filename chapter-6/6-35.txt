@@ -5,8 +5,8 @@ m m m m
 m m m m
 
 src array
-m h h h
-m h h h
-m h h h
-m h h h
+m m h m
+m h m h
+m m h m
+m h m h
 
