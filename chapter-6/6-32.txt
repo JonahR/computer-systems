@@ -1,0 +1,9 @@
+A. 00111000 110 10
+
+B.
+0x2
+0x6
+0x38
+No, valid bit not set
+N/A
+
