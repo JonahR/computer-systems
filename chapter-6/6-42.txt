@@ -1,0 +1,3 @@
+25% of writes will miss the cache. We are accessing in stride-1 and each write is for a single byte and each cache line
+can fit 4 bytes.
+
