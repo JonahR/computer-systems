@@ -1,0 +1,6 @@
+A. 1024 writes
+
+B. 1024 writes miss the cache
+
+C. 100%
+
