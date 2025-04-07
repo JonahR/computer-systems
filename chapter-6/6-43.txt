@@ -1,0 +1,2 @@
+25% of writes will miss the cache. We are accessing the array in stride 1. Each cache line can fit 4 bytes. 
+
