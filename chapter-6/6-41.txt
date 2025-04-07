@@ -1,0 +1,6 @@
+A. 1024 writes
+
+B. 256 misses
+
+C. 25% miss rate
+
