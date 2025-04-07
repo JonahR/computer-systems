@@ -1,0 +1,10 @@
+A. The miss rate is 100%.
+
+B. The miss rate is 25%. 
+
+C. 25%
+
+D. No, a larger cache size will not help. We are already fully utilizing the cache.
+
+E. Yes, a larger block size will gives us more cache hits.
+
