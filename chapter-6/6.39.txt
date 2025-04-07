@@ -1,0 +1,6 @@
+A. 4 x 16 x 16 = 1024 writes
+
+B. 128 writes miss the cache
+
+C. 1/8 or 12.5%
+
