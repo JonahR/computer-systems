@@ -1,0 +1,4 @@
+25% of writes miss the cache. At first glace it looks like 100% of writes miss the cache,
+but we write 1 byte at a time. There is a cache miss for the first byte and a cache hit 
+for the last 3 bytes of an int.
+
