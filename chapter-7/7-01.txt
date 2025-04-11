@@ -1,0 +1,12 @@
+Symbol      .symtab entry?     Symbol type     Module     Section
+------------------------------------------------------------------------------
+buf             yes             extern         main.o     .data
+
+bufp0           yes             global         swap.o     .data
+
+bufp1           yes             global         swap.o     .bss
+
+swap            yes             global         swap.o     .text
+
+temp            no
+
