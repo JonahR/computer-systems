@@ -1,0 +1,12 @@
+A.
+REF(main.1) --> DEF(main.1)
+REF(main.2) --> DEF(main.1)
+
+B.
+REF(main.1) --> ERROR
+REF(main.2) --> ERROR
+
+C.
+REF(x.1) --> DEF(x.2)
+REF(x.2) --> DEF(x.2)
+
