@@ -1,0 +1,9 @@
+A. Every C program needs a main fuction because the startup code in the ELF executable object file has a call to the main function.
+Since C code is compiled into ELF files, if there is no main function, the call to main would fail when the ELF file is loaded
+into memory.
+
+
+Yes, I have wondered why a C program can end with exit, a return value, or nothing and still terminate properly. This is because
+after the main function ends, control will be sent back to the startup code in the ELF executable file. The next line in the ELF
+is a call to the operating systems _exit function which sends control back to the operation system.
+
