@@ -1,0 +1,6 @@
+The data segment occupies 0x104 bytes in memory, but only 0xe8 bytes come from
+the executable file. This is because of .bss data. .bss stands for Block
+started by symbol and all of its values are initialized to 0 to save space.
+The executable object file is smaller, because the .bss section does not have
+to initialize each value to the size it will be during runtime. 
+
