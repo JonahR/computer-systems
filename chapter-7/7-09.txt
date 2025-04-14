@@ -1,0 +1,6 @@
+In p2(), main returns 0x55 because there is a strong symbol reference to main
+in foo6.c. In bar6.c, char main is linked to the int main() function. When
+printing the hexademinal value of the int main() function as a char, we get
+0x55. I do not know why it is 0x55, but this is most likely the lower order
+bytes of the function location on a little endian machine. 
+
