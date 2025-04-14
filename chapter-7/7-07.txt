@@ -1,0 +1,7 @@
+
+        external double x;
+
+The x in the module's function will be linked to the static var instead of the
+global var. This means static variables with the same name as global variables
+take precedence.
+
