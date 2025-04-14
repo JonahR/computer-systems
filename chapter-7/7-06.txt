@@ -1,0 +1,10 @@
+Symbol     .symtab?     type     module     section
+------------------------------------------------------------------------------
+buf        yes          external main.o     .data
+bufp0      yes          global   swap.o     .data
+bufp1      yes          local    swap.o     .bss
+swap       yes          global   swap.o     .bss
+temp       no           -        -          -
+incr       yes          local    swap.o     .text
+count      yes          local    swap.o     .data
+
