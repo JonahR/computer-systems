@@ -1,0 +1,8 @@
+A. Unfortunately, MacOS does not have a libc.a in its filesystem
+
+B. Yes, the executable will contain debug information for symbols when
+using the -g flag.
+
+C. /usr/lib/libxcselect.dylib 
+   /usr/lib/libSystem.B.dyli
+
