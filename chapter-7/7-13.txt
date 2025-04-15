@@ -12,6 +12,7 @@ symbol name: xp
 e8 fc ff ff ff : call 21 <p1+0x19>
 section offset: 21
 relocation type: R_386_PC32
+symbol name: p2
 
 B.
 00000004 <xp>
