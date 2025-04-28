@@ -10,7 +10,7 @@ unsigned int snooze(unsigned int secs) {
 }
 
 
-int main() {
-	snooze(3);
-}
+// int main() {
+// 	snooze(3);
+// }
 

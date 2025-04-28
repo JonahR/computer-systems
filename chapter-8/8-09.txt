@@ -1,0 +1,7 @@
+AB N
+AC Y
+AD Y
+BC Y
+BD Y
+CD Y
+
