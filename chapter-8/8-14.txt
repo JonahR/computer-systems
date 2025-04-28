@@ -1,0 +1,2 @@
+"hello" will print 3 times.
+
