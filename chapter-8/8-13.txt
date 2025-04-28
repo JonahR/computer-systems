@@ -1,0 +1,5 @@
+One possible output is:
+4
+3
+2
+
