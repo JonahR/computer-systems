@@ -1,0 +1,6 @@
+Called once, returned twice: fork
+
+Called once, never returns: execve, longjmp
+
+Called once, returns one or more times: setjmp
+
