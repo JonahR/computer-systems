@@ -1,0 +1,5 @@
+This bug occurs because signals of the same type are not queued by the kernel.
+This means when a signal is set to a process it will recieve it. While
+handling the signal, if the process is sent another signal, the signal will
+become pending. If another signal is sent, while there is a pending signal it
+will be ignored.
