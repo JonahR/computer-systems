@@ -1,0 +1,15 @@
+Possible outputs:
+Hello
+0
+1
+Bye
+2
+
+-----
+
+Hello
+1
+0
+Bye
+2
+
