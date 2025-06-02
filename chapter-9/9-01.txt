@@ -1,0 +1,7 @@
+No. virtual address bits (n) | No. virtual addresses (N) | Largest possible virtaul address
+
+              8                      2^8 = 256                     255
+	      16                     2^16 = 64K                    65536
+	      32                     2^32 = 4G                     4294967295
+	      48                     2^48 = 256T                   281474976710655
+	      64                     2^64 = 16E                    18446744073709551616
