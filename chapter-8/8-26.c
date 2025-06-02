@@ -22,6 +22,7 @@ void addargv(char *job, char **argv);
 void sigint_handler(int sig);
 void sigtstp_handler(int sig);
 void fg(char **argv);
+void bg(char **argv);
 void stopjob(int pid);
 
 extern char **environ;
@@ -187,6 +188,10 @@ int builtin_command(char **argv) {
     fg(argv);
     return 1;
   }
+  if (!strcmp(argv[0], "bg")) {
+    bg(argv);
+    return 1;
+  }
   return 0;
 }
 
@@ -207,7 +212,7 @@ void jobs(void) {
 	status = running;
       if(STATUS[i] == STOPPED)
 	status = stopped;
-      printf("[%d] %d %s   %s", i, PIDS[i], status, JOBS[i]);
+      printf("[%d] %d %s   %s", i+1, PIDS[i], status, JOBS[i]);
     }
   }
 }
@@ -216,11 +221,11 @@ void fg(char **argv) {
   pid_t pid = 0;
   int i, jid, argc;
 
-  while (argv[i] != NULL) {
+  for (i = 0; ; i++) {
+    if (argv[i] == NULL) {
+      break;
+    }
     argc++;
-    i++;
-    printf("inc i\n");
-    fflush(stdout);
   }
 	
   if(argc != 2) {
@@ -239,11 +244,48 @@ void fg(char **argv) {
 	pid = PIDS[jid-1];
 	break;
       }
+    }
   }
   if (pid != 0) {
     kill(pid, SIGCONT);
     STATUS[jid-1] = RUNNING;
     FG = pid;
+  }
+  return;
+}
+
+void bg(char **argv) {
+  pid_t pid = 0;
+  int i, jid, argc;
+
+  for (i = 0; ; i++) {
+    if (argv[i] == NULL) {
+      break;
+    }
+    argc++;
+  }
+	
+  if(argc != 2) {
+    printf("bg requires a single JID or PID\n");
+    return;
+  }
+  else if(argv[1][0] == '%') {
+    jid = atoi(&argv[1][1]);	
+    if (jid > 0 && jid <= SHELLLIMIT) {
+      pid = PIDS[jid-1];
+    }
+  } else {
+    i = atoi(&argv[1][0]);
+    for (jid = 1; jid <= SHELLLIMIT; jid++) {
+      if (PIDS[jid-1] == i) {
+	pid = PIDS[jid-1];
+	break;
+      }
+    }
+  }
+  if (pid != 0) {
+    kill(pid, SIGCONT);
+    STATUS[jid-1] = RUNNING;
   }
   return;
 }
