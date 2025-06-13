@@ -1,0 +1,4 @@
+A reference pattern that results in severe external fragmentation in an allocator based on simple segregated storage is one
+that makes a large amounts of mallocs and corresponding frees to a single storage class and then never uses that storage
+class again. This leads to fragmentation because all the blocks in the pages pulled in by the OS are fixed to the size of the storage
+class but will never be used by the program if the size block is not used again.
