@@ -1,0 +1,6 @@
+Request     Block size (decimal bytes)     Block header (hex)
+-------------------------------------------------------------
+malloc(1)            8                      0x8 | 0x1 = 0x9
+malloc(5)            16                     0x10 | 0x1 = 0x11
+malloc(12)           16                     0x10 | 0x1 = 0x11
+malloc(13)           24                     0x18 | 0x1 = 0x19
