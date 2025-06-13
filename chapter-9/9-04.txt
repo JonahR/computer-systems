@@ -1,0 +1,29 @@
+A.
+
+0 0 0 0 1 1 1 1 0 1 0 1 1 1
+
+B.
+
+Parameter       Value
+------------------------
+VPN             x0F
+TLB index       x3
+TLB tag         x03
+TLB hit?        yes
+Page fault?     no
+PPN             x0D
+
+C.
+
+0 0 1 1 0 1 0 1 0 1 1 1
+
+D.
+
+Parameter          Value
+---------------------------
+Byte offset         x3
+Cache index         x5
+Cache tag           xD
+Cache hit?          yes
+Cache byte          
+returned            x1D
