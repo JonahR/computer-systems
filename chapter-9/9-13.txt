@@ -1,0 +1,27 @@
+A. Virtual Address format
+
+0x0040
+
+00 0000 0100 0000
+
+VPO: 00 0000
+VPN: 0000 0001
+
+B. Address translation
+
+Parameter          Value
+------------------------
+VPN                0x01
+TLB index          0x0
+TLB tag            0x00
+TLB hit?           No
+Page fault?        Yes
+PPN                N/A
+
+C. Physical address format
+
+N/A
+
+D. Physical memory reference
+
+N/A
