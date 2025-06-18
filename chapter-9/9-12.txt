@@ -1,0 +1,33 @@
+A. Virtual Address format
+
+0x03a9
+
+00 0011 1010 1001
+
+VPO: 10 1001
+VPN: 0000 1110
+
+B. Address translation
+
+Parameter          Value
+------------------------
+VPN                0x0E
+TLB index          0x2
+TLB tag            0x03
+TLB hit?           No
+Page fault?        No
+PPN                0x11
+
+C. Physical address format
+
+0100 0110 1001
+
+D. Physical memory reference
+
+Parameter                 Value
+-------------------------------
+Byte offset               0x1
+Cache index               0xA
+Cache tag                 0x11
+Cache hit?                No
+Cache byte returned       N/A
