@@ -1,0 +1,30 @@
+A. Virtual Address format
+
+0x027c
+
+00001001111100
+
+B. Address translation
+
+Parameter          Value
+------------------------
+VPN                0x09
+TLB index          0x2
+TLB tag            0x0
+TLB hit?           No
+Page fault?        No
+PPN                17
+
+C. Physical address format
+
+01 0111 111100
+
+D. Physical memory reference
+
+Parameter                 Value
+-------------------------------
+Byte offset               0x0
+Cache index               0xF
+Cache tag                 0x17
+Cache hit?                No
+Cache byte returned       N/A
