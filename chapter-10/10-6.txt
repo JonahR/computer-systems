@@ -1,0 +1,1 @@
+The output of the program is: fd2 = 4
