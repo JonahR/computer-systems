@@ -1,0 +1,32 @@
+./a.out google.com
+official hostname: google.com
+address: 142.251.16.101
+address: 142.251.16.102
+address: 142.251.16.138
+address: 142.251.16.139
+address: 142.251.16.100
+address: 142.251.16.113
+jonahrueb@Mac chapter-11 % ./a.out google.com
+./a.out google.com
+official hostname: google.com
+address: 142.251.16.101
+address: 142.251.16.102
+address: 142.251.16.138
+address: 142.251.16.139
+address: 142.251.16.100
+address: 142.251.16.113
+jonahrueb@Mac chapter-11 % ./a.out google.com
+./a.out google.com
+official hostname: google.com
+address: 142.251.16.101
+address: 142.251.16.102
+address: 142.251.16.138
+address: 142.251.16.139
+address: 142.251.16.100
+address: 142.251.16.113
+
+A. The order is the same between the three entries.
+
+B. I don't have a good guess, but it could signify what has the fastest connection. When checking
+the answers, it notes the entries should be in a different order for round robin load balancing. I am
+guessing this is no longer the case (google load balances internally now).
