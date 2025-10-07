@@ -1,0 +1,2 @@
+The CGI program is able to use standard I/O because it only writes content. Standard I/O over the network presents issues when reading / writing content.
+This would be a problem in a POST request where the arguements are read from stdin vs a GET request where the arguements are read in via an ENV variable.
