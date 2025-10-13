@@ -1,0 +1,3 @@
+We could remove like 30 `Close(connfd)` because the next line is `exit(0)`. When a proccess is exited,
+all of its open file descriptors are closed. However, it is good practice not to rely on this behavior and explicity
+close open files.
