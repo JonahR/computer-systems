@@ -1,0 +1,6 @@
+The child is still able to communicate with the client because it copies its parent's file descriptor table.
+Before the parent closes the connection, it's descriptor table has an entry pointing to the connection's file
+table entry. The child's descriptor table is also pointing to the came descriptor table entry. When the parent
+closes the connection. The link from its file table to descriptor entry is removed, but still exists for the
+child. The kernel does not delete the connection's file descriptor until the reference count is zero.
+
