@@ -1,0 +1,6 @@
+We need to reinitialize the `pool.ready_set` variable, because the Select function will unset
+any descriptors that are not ready to be read. Beacuase of this, we lose all descriptors from
+the read set, that are not ready to be read. If we would like to Select again. We want to select
+on the entirity of the read set, not just what was ready for reading in the previous loop. The
+Select function takes in the read set, but it returns the ready set. We must always pass in the
+complete read set.
