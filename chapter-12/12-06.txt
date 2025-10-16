@@ -1,0 +1,21 @@
+A.
+
+Variable     Referenced by     Referenced by      Referenced by
+instance     main thread?      peer thread 0?     peer thread 1?
+----------------------------------------------------------------
+ptr            Yes               Yes                Yes
+
+cnt            No                Yes                Yes
+
+i.m            Yes               No                 No
+
+msgs.m         Yes               Yes                Yes
+
+myid.p0        No                Yes                No
+
+myid.p1        No                No                 Yes
+
+
+B.
+
+msgs.m, ptr, and cnt are shared.
