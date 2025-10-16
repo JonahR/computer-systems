@@ -1,0 +1,2 @@
+We close the file descriptor once because all threads from a process share the same file descriptor table. If
+a desciptor is closed in a thread, it is closed in all the threads and the process itself.
