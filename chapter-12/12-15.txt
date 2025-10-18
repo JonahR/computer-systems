@@ -1,0 +1,37 @@
+A.
+
+V(t)
+                           xxxxxxxxx
+                           xxxxxxxxx 
+P(t)   xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                           x
+                           x
+V(s)                       x
+        xxxxxxxxx          x
+        xxxXXXXXX          x
+P(s)    xxxXXXXXX          X
+                           X                          
+                           X
+        P(s)     V(s)     P(t)     V(t)
+
+s = 1; t = 0.
+
+B. Yes
+
+C. s = 1; t = 1
+
+D.
+
+V(t)                       xxxxxxxxx
+                           xxxxxxxxx
+                           xxxxxxxxx
+P(t)                       xxxxxxxxx
+                           
+                           
+V(s)     xxxxxxxxx                  
+         xxxxxxxxx                  
+         xxxxxxxxx                  
+P(s)     xxxxxxxxx                  
+                                                     
+                           
+        P(s)     V(s)     P(t)     V(t)
