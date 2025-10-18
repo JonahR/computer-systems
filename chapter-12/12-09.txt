@@ -1,0 +1,5 @@
+A. The mutex is necessary
+
+B. The mutex is not necessary
+
+C. The mutex is not necessary
