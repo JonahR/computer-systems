@@ -1,0 +1,9 @@
+Threads (t)         1        2         4
+
+Cores (p)           1        2         4
+
+Running time (Tp)   12       8         6
+
+Speedup (Sp)        1        1.5       2      
+
+Efficiency (Ep)     100%     75%       50%
