@@ -1,0 +1,4 @@
+Is `echo_cnt` thread-safe? Is it reentrant? Why or why not?
+
+`echo_cnt` is thread safe because a mutex is used to protect its referenced global variables.
+`echo_cnt` is not reentrant because it uses global variables protected by a mutex.
