@@ -1,0 +1,5 @@
+Rio is implicitly reenterant. If the caller passes in different rio pointers in each thread,
+it will correctly execute the function. However, if the same rio pointer is passed to multiple
+threads calling Rio functions, it will overwrite data in the now shared rio struct. The Rio functions
+require no synchonization within their methods which make the reentrant in the perspective of the
+callee.
