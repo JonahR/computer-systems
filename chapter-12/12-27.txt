@@ -1,0 +1,4 @@
+A deadly race condition is created because the first call to fclose will close the underlying
+socker descriptor. If another client connects to the server, its socketfd number will be the same
+as the on just closed. This is where the race condition happens. The second call to fclose() will
+now close the recently opened sockfd from the other thread.
