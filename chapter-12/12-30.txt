@@ -1,0 +1,5 @@
+A. Thread 1: a-b, a-c. Thread 2: c-b. Thread 3: b-a.
+
+B. Thread number 3. It locks b before a.
+
+C. Thread 3: P(c); V(c); P(a); P(b); V(a); V(b). With the other threads the same.
