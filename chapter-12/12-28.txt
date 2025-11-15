@@ -1,0 +1,2 @@
+The order of the V() "Verhogen" operations has no effect on if the program deadlocks. This is because a program will
+only deadlock if the V() and P() operations are intermixed.
